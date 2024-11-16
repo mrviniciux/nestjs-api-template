@@ -6,6 +6,14 @@ A template for backend api's using NestJS
 <img width="50" height="50" src="https://github.com/user-attachments/assets/56802a50-e6de-436e-9804-da75095887b4" />
 <img width="50" height="50" src="https://github.com/user-attachments/assets/8d579f8b-f2f4-4906-b005-c9edf70ab58c" />
 
+## DDD
+Domain-driven design (DDD) is a major software design approach
+
+DDD is against the idea of having a single unified model; instead it divides a large system into bounded contexts, each of which have their own model.
+
+![image](https://github.com/user-attachments/assets/2cd72f1e-e124-4b27-b2a9-7bbb0837f003)
+
+
 
 ## Requirements
 
