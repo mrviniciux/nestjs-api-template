@@ -1,7 +1,10 @@
 # nestjs-api-template
 A template for backend api's using NestJS
 
-![image](https://github.com/user-attachments/assets/42f7fa0e-02e2-43a6-b04e-ba3a10156429)
+<img width="50" height="50" src="https://github.com/user-attachments/assets/42f7fa0e-02e2-43a6-b04e-ba3a10156429" />
+<img width="50" height="50" src="https://github.com/user-attachments/assets/96442bf5-47cd-43a0-8d64-20b59c4e1aec" />
+<img width="50" height="50" src="https://github.com/user-attachments/assets/56802a50-e6de-436e-9804-da75095887b4" />
+<img width="50" height="50" src="https://github.com/user-attachments/assets/8d579f8b-f2f4-4906-b005-c9edf70ab58c" />
 
 
 ## Requirements
