@@ -1,0 +1,182 @@
+{
+	"info": {
+		"_postman_id": "8c1143c1-0019-4efb-b0aa-c84f2001252e",
+		"name": "User",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14419369"
+	},
+	"item": [
+		{
+			"name": "User - Find all",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "{{user}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{apiUrl}}/api/v1/users",
+					"host": [
+						"{{apiUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User - Find",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "{{user}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{apiUrl}}/api/v1/users/1",
+					"host": [
+						"{{apiUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"1"
+					],
+					"query": [
+						{
+							"key": "x-access-token",
+							"value": "{{token}}",
+							"disabled": true
+						},
+						{
+							"key": "username",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User - Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"Ademir\",\n    \"lastName\": \"Inc\",\n    \"email\": \"adm@whatsapp.com\",\n    \"password\": \"123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{apiUrl}}/api/v1/users",
+					"host": [
+						"{{apiUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users"
+					],
+					"query": [
+						{
+							"key": "firstName",
+							"value": "Ademir",
+							"disabled": true
+						},
+						{
+							"key": "lastName",
+							"value": "Inc",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "corp@whatsapp.com",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User - Update",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"lastName\": \"Inc .\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{apiUrl}}/api/v1/users/1",
+					"host": [
+						"{{apiUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{apiUrl}}/api/v1/users/2",
+					"host": [
+						"{{apiUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,208 @@
+{
+	"info": {
+		"_postman_id": "c3437001-493a-406f-bb24-1fb9eabbf701",
+		"name": "Products",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14419369"
+	},
+	"item": [
+		{
+			"name": "Products - Find one",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "{{user}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{apiUrl}}/api/v1/products/1",
+					"host": [
+						"{{apiUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"products",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Products - Find all",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "{{user}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{apiUrl}}/api/v1/products",
+					"host": [
+						"{{apiUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Products - New",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "x-access-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "{{user}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Phone 2\",\r\n    \"price\": 10.20\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{apiUrl}}/api/v1/products",
+					"host": [
+						"{{apiUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Products - Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "x-access-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "{{user}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{apiUrl}}/api/v1/products/2",
+					"host": [
+						"{{apiUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"products",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Products - Update",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "x-access-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "{{user}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"quantity\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{apiUrl}}/api/v1/products/1",
+					"host": [
+						"{{apiUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"products",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

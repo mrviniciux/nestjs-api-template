@@ -1,0 +1,323 @@
+{
+	"info": {
+		"_postman_id": "1c2bba3a-445f-4b70-89da-a7ebfe260a07",
+		"name": "CartItems",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14419369"
+	},
+	"item": [
+		{
+			"name": "CartItems - Find one",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "{{user}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{apiUrl}}/api/v1/cart-items/1",
+					"host": [
+						"{{apiUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"cart-items",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CartItems - Find all",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "{{user}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{apiUrl}}/api/v1/cart-items",
+					"host": [
+						"{{apiUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"cart-items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CartItems - Find all by logged user",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "username",
+						"value": "{{user}}",
+						"type": "text"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer {{access_token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{apiUrl}}/api/v1/cart-items/session",
+					"host": [
+						"{{apiUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"cart-items",
+						"session"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CartItems - Totals",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "{{user}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{apiUrl}}/api/v1/cart-items/totals",
+					"host": [
+						"{{apiUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"cart-items",
+						"totals"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CartItems - New",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "x-access-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "{{user}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"userId\": 1,\r\n     \"productId\": 1,\r\n     \"quantity\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{apiUrl}}/api/v1/cart-items",
+					"host": [
+						"{{apiUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"cart-items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CartItems - Checkout",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "x-access-token",
+						"value": "{{token}}",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "username",
+						"value": "{{user}}",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer {{access_token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"productId\": 1,\r\n     \"quantity\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{apiUrl}}/api/v1/cart-items/checkout",
+					"host": [
+						"{{apiUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"cart-items",
+						"checkout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CartItems - Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "x-access-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "{{user}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{apiUrl}}/api/v1/products/2",
+					"host": [
+						"{{apiUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"products",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CartItems - Update",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "x-access-token",
+						"value": "{{token}}",
+						"type": "text"
+					},
+					{
+						"key": "username",
+						"value": "{{user}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"quantity\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{apiUrl}}/api/v1/cart-items/4",
+					"host": [
+						"{{apiUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"cart-items",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
